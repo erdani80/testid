@@ -1,0 +1,49 @@
+Request for ID:
+
+{
+	"version" : "0"
+	"command" : "id"
+	"params" : {
+	}
+}
+
+Response to ID:
+
+{
+	"version" : "0"
+	"response" : "id"
+	"params" : {
+		"ip" : "192.168.1.1"
+		"mac" : "bc:30:5b:d0:65:3c"
+		"name" : "board1"
+	}
+}
+
+Request to reboot or halt (no response to command):
+
+{
+        "version" : "0"
+        "command" : "reboot"
+        "params" : {
+		"ip" : "192.168.1.1" or "all"
+        }
+}
+
+{
+        "version" : "0"
+        "command" : "halt"
+        "params" : {
+		"ip" : "192.168.1.1" or "all"
+        }
+}
+
+Request to signal presence (blink a led, any other action that can be meassured),... (no response to command)
+
+{
+        "version" : "0"
+        "command" : "blink"
+        "params" : {
+                "ip" : "192.168.1.1" or "all"
+        }
+}
+
